@@ -1,0 +1,551 @@
+<!DOCTYPE doctype PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=iso-8859-1">
+  <title>Xavier GANDIBLEUX Homepage</title>
+  <meta http-equiv="description"
+ content="Activities of the Multi-Objective Optimization Group in Nantes">
+  <meta http-equiv="author" content="Xavier Gandibleux">
+  <meta name="keywords"
+ content="MOCO Multiobjective Optimization Operations Reseach">
+  <link href="XGstyle.css" type="text/css" rel="stylesheet">
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-17716935-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  </script>
+</head>
+<body style="background-color: rgb(255, 255, 255);">
+<a name="Top"></a><img src="picrecife/bannRECIFE.jpg" alt=""
+ style="border: 0px solid ; width: 780px; height: 168px;">
+<table border="0" cellpadding="0" cellspacing="2" width="780">
+  <tbody>
+    <tr height="10">
+      <td height="10" width="40"><br>
+      </td>
+      <td height="10" width="680"><br>
+      </td>
+    </tr>
+    <tr height="20">
+      <td height="20" width="40"><br>
+      </td>
+      <td height="20" width="680">
+      <div align="left">
+      <h1><font color="black"
+ face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">RECIFE</font></h1>
+      <h2><font color="#919191"
+ face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" size="3"><span
+ style="font-weight: normal;">A Multi Criteria Decision Support System
+for Capacity Assessment of Railway Infrastructure</span><br>
+      </font></h2>
+      </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table border="0" cellpadding="0" cellspacing="2" width="780">
+  <tbody>
+    <tr height="20">
+      <td height="20" width="40"><br>
+      </td>
+      <td height="20" width="740"> <br>
+      </td>
+    </tr>
+    <tr>
+      <td width="40"> <br>
+      </td>
+      <td width="740">
+      <div align="left">
+      <h6> </h6>
+      <p><br>
+      <font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><a
+ name="Motivation"></a></b></font><font size="-1">[ </font><font
+ color="#000000" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"
+ size="-1"><a href="../index.html">Home</a> | <a
+ href="index.html#Top">Top</a> ][ <a href="index.html#Motivation">Motivation</a> | <a
+ href="index.html#Principle">Principle</a> | <a href="index.html#Software">Software</a>
+| <a href="index.html#References">References</a> | <a href="index.html#Contacts">Contacts</a>
+| <a href="index.html#Acknowledgment">Acknowledgment</a> </font><font
+ color="#000000" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"
+ size="-1">]</font></p>
+      <p style="color: rgb(0, 0, 0);"><font
+ face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" size="+1"><b>Motivation</b></font></p>
+      <blockquote>
+        <h6>The development and the success of high speed trains,
+conjugated with
+the saturation of roads in and around large cities, are two factors
+boosting the renewed interest for the railway transportation.
+Additionally, the many advantages of train for sustainable development
+favors the railway companies. Consequently the rail traffic is
+continuously increasing those last years in Europe. However to remain
+competitive, the railway companies have to improve efficiency and
+quality of service offered to the customers: <span
+ style="color: rgb(153, 0, 0);">more trains in operation, less trains
+delayed.</span><br>
+        <br>
+As in many European countries, the French railways have been
+separated into train operation and railway infrastructure. RFF is&nbsp;
+the French railway
+infrastructure manager, while the
+SNCF is the historical operator with the dominant market share position
+in the passenger and freight railway transportation. Soon, new private
+and possibly low-cost operators may appear on this market. They could
+operate on some lines, introducing changes in passenger transportation.<br>
+        <br>
+Freight transportation is also concerned.&nbsp; To reduce the number of
+trucks on the roads, the rail freight operators must offer a comparable
+quality of service (punctuality, reliability, flexibility, average
+commercial speed...) in order to increase the number of trains in
+operation. Consequently, a passenger or a freight train running on an
+infrastructure will be subject the payment of a track access charge to
+the infrastructure manager.<br>
+        <br>
+In order to implement a rail transport supply strategy, it is crucial
+to have operational tools for supporting the studies and the analysis
+of railway infrastructure development strategies. For example, tools
+must be able to identify the limits of an existing or future network,
+with one or more possible supply configurations. The central challenge
+for an optimal use of the infrastructure requests <span
+ style="color: rgb(153, 0, 0);">an appropriate measure of the railway
+infrastructure capacity</span>.<br>
+        </h6>
+      </blockquote>
+      <span style="font-weight: bold;"></span><font
+ face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><a
+ name="Principle"></a></b></font><font size="-1">[ </font><font
+ color="#000000" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"
+ size="-1"><a href="../index.html">Home</a> | <a
+ href="index.html#Top">Top</a> ][ <a href="index.html#Motivation">Motivation</a>
+| <a href="index.html#Principle">Principle</a> | <a
+ href="index.html#Software">Software</a>
+| <a href="index.html#References">References</a> | <a
+ href="index.html#Contacts">Contacts</a>
+| <a href="index.html#Acknowledgment">Acknowledgment</a> </font><font
+ color="#000000" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"
+ size="-1">]</font>
+      <p style="color: rgb(0, 0, 0);"><font
+ face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" size="+1"><b>Principle</b></font></p>
+      <h6 style="margin-left: 40px;">RECIFE is a <span
+ style="color: rgb(153, 0, 0);">Multi
+Criteria Decision Support Software</span> including <span
+ style="color: rgb(0, 0, 0);">models
+and algorithms to evaluate railway infrastructure capacity</span>. It
+helps <span style="color: rgb(0, 0, 0);">decision-maker expert in
+railway transportation</span> to optimize the use of
+the infrastructure at a microscopic level. It
+considers <span style="color: rgb(153, 0, 0);">a feasibility or
+saturation problem and the stability of
+proposed timetables.</span> <br>
+      <br>
+RECIFE uses Multi Criteria Decision Making
+methodologies within models, algorithms, and functionalities. It is now
+fully operational and has been implemented at the Pierrefitte-Gonesse
+junction and the Lille-Flandres station in order to validate the
+principles and the proposed algorithms in <span
+ style="color: rgb(153, 0, 0);">real complex railway (junction or
+station) environments</span>. The core of the decision process in
+RECIFE integrates two models.</h6>
+      <div style="text-align: center;"><img alt=""
+ src="picrecife/archi.jpg" style="width: 585px; height: 239px;"><br>
+      </div>
+      <div style="margin-left: 40px;">
+      <h6>The <span style="color: rgb(153, 0, 0);">optimization
+model </span>aims
+to maximize the number of train,
+i.e. to optimize the timetable's feasibility and saturation objectives,
+as well as the objective representing DM
+preferences. The model to solve is then optimized with an algorithm
+based on the principle of metaheuristics. It returns <span
+ style="color: rgb(153, 0, 0);">a collection of
+equivalent solutions </span>on the number of trains&nbsp; scheduled.
+Two
+equivalent solutions have timetables with the same number of trains,
+but with different types and/or schedules.<br>
+      <br>
+The <span style="color: rgb(153, 0, 0);">simulation model</span>
+maximizes the stability of equivalent solutions (minimize the sum of
+delays). In order to assess the
+stability, several objectives are "dynamically" defined by the DM in
+order to simulate the effect of delays on solutions. The DM is focused
+on the efficient solutions who are representative of the best
+compromises. Analysis tools provided helps the DM <span
+ style="color: rgb(153, 0, 0);">to choose one timetable among the
+efficient solutions</span> highlighted by the software.</h6>
+      </div>
+      <font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><a
+ name="Software"></a></b></font><font size="-1">[ </font><font
+ color="#000000" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"
+ size="-1"><a href="../index.html">Home</a> | <a
+ href="index.html#Top">Top</a> ][ <a href="index.html#Motivation">Motivation</a>
+| <a href="index.html#Principle">Principle</a> | <a
+ href="index.html#Software">Software</a>
+| <a href="index.html#References">References</a> | <a
+ href="index.html#Contacts">Contacts</a>
+| <a href="index.html#Acknowledgment">Acknowledgment</a> </font><font
+ color="#000000" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"
+ size="-1">]</font>
+      <p style="color: rgb(0, 0, 0);"><font
+ face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" size="+1"><b>Software</b></font></p>
+      <h6 style="margin-left: 40px;">Input data, <span
+ style="color: rgb(153, 0, 0);">one
+scenario:</span><br>
+      </h6>
+      <h6 style="text-align: center;"><img alt=""
+ src="picrecife/Editor2s_300.jpg" style="width: 524px; height: 371px;"><br>
+      </h6>
+      <div style="margin-left: 40px;">
+      <h6>The DM defines the list of trains who are candidate to be
+scheduled in a timetable and their characteristics (arrival date,
+authorized delay, authorized routes, preferences...). On the left
+part of this figure, 26 passengers trains are candidates for crossing a
+junction.<br>
+      <br>
+      <br>
+First stage, <span style="color: rgb(153, 0, 0);">the optimization
+activity:</span><br>
+      </h6>
+      </div>
+      <h6 style="text-align: center;"><img alt=""
+ src="picrecife/Optimization-CAPA1s_300.jpg"
+ style="width: 525px; height: 373px;"><br>
+      </h6>
+      <div style="margin-left: 40px;">
+      <h6>The DM is informed by the convergence of the optimization
+algorithm. The figure is a screenshot of the optimization screen: X
+axis denotes the elapsed time, Y axis the number of trains scheduled in
+the solutions. The oscillation results from the restart strategy
+included in the algorithm. No improvement is obtained after the first
+restart for this example.<br>
+      <br>
+      <br>
+Second stage, <span style="color: rgb(153, 0, 0);">the simulation
+activity:</span><br>
+      </h6>
+      </div>
+      <h6 style="text-align: center;"><img alt=""
+ src="picrecife/Stability2s_300.jpg"
+ style="width: 524px; height: 372px;"><br>
+      </h6>
+      <div style="margin-left: 40px;">
+      <h6>Visual tools based on MCDM concepts are provided to the DM
+for supporting its analysis of solutions. The figure is a screenshot of
+the simulation screen. Three primary delays (60, 180, 300 seconds)
+are defined. DM analyzes the corresponding secondary delays in a two
+dimensional flat view showing all the equivalent timetables (view 1,
+left).<br>
+      <br>
+With the current options, 6 timetables are efficients. Their profiles
+are shown for
+the 3 objectives (60, 180, 300) (view 2, right). DM is focusing on
+solution number 47 which is highlighted on views.<br>
+      <br>
+      <br>
+Data in output, <span style="color: rgb(153, 0, 0);">a robust feasible
+timetable:</span><br>
+      </h6>
+      </div>
+      <div style="text-align: center;"><img alt=""
+ src="picrecife/Analysis2s_300.jpg" style="width: 523px; height: 372px;"><br>
+      </div>
+      <div style="margin-left: 40px;">
+      <h6>Macroscopic and microscopic quantitative information about
+a
+solution are available for supporting the analyze. Here all the 26
+trains are scheduled, using 9 routes. The detail by type of train is
+also reported (right top). For this solution, 15 trains are using the
+track 87 appearing as the most often requested part of the
+infrastructure. The most busy track sections are also reported in term
+of occupation time (left bottom). Only the track section 4 is unused
+(right bottom) by the solution. For this solution, a primary delay of
+180 seconds generates a secondary delay of 2032 seconds.<br>
+      <br>
+      <br>
+Analyse tool 1, <span style="color: rgb(153, 0, 0);">space-time diagram</span>:<br>
+      </h6>
+      </div>
+      <div style="text-align: center;"><img alt=""
+ src="picrecife/SpaceTime1s_300.jpg"
+ style="width: 376px; height: 312px;"><br>
+      </div>
+      <div style="margin-left: 40px;">
+      <h6>This is the common view representing a solution, where X is
+the
+time, Y the distance. Here 5 trains are scheduled on this route<br>
+      <br>
+      <br>
+Analyse tool 2, <span style="color: rgb(153, 0, 0);">Gantt chart
+timetable visualization:</span></h6>
+      </div>
+      <div style="text-align: center;"><img alt=""
+ src="picrecife/Gantt1s_300.jpg" style="width: 483px; height: 342px;"><br>
+      </div>
+      <div style="margin-left: 40px;">
+      <h6> This view allows a detailed examination of the resources
+used by each train included in
+a solution.<br>
+      <br>
+      <br>
+Analyse tool 3, <span style="color: rgb(153, 0, 0);">Track layout
+timetable animation:</span></h6>
+      </div>
+      <div style="text-align: center;"><img alt=""
+ src="picrecife/TrackMap1.jpg" style="width: 495px; height: 229px;"><br>
+      </div>
+      <div style="margin-left: 40px;">
+      <h6>Any solution can be played
+allowing the DM to track a particular train. Here the train 7 is
+monitored by the DM.</h6>
+      </div>
+      <font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><a
+ name="References"></a></b></font><font size="-1">[ </font><font
+ color="#000000" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"
+ size="-1"><a href="../index.html">Home</a> | <a
+ href="index.html#Top">Top</a> ][ <a href="index.html#Motivation">Motivation</a>
+| <a href="index.html#Principle">Principle</a> | <a
+ href="index.html#Software">Software</a>
+| <a href="index.html#References">References</a> | <a
+ href="index.html#Contacts">Contacts</a>
+| <a href="index.html#Acknowledgment">Acknowledgment</a> </font><font
+ color="#000000" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"
+ size="-1">]</font>
+      <p style="color: rgb(0, 0, 0);"><font
+ face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" size="+1"><b>References</b></font></p>
+      <blockquote>
+        <h6>Degoutin, Fabien, Rodriguez, Joaquin, and Gandibleux,
+Xavier. 2005. <span style="color: rgb(153, 0, 0);">Premi&egrave;re
+&eacute;valuation des
+performances d'un mod&egrave;le
+CSP pour le probl&egrave;me de saturation d'infrastructures
+ferroviaires</span>. In <span style="font-style: italic;">Proceedings
+of the ROADEF 2005 -
+French National OR Conference</span> (J.-Ch. Billaut et C. Esswein
+Coord.) Collection Sciences, Technologie "Informatique". Presses
+Universitaires Fran&ccedil;ois Rabelais. Pages
+277-294. ISBN :2-86906-196-X. (In french).<br>
+        <br>
+Degoutin, Fabien. 2007. <span style="font-style: italic;"><span
+ style="color: rgb(153, 0, 0);">Mod&eacute;lisation par
+contraintes et heuristiques pour l'&eacute;valuation de la
+capacit&eacute; d'infrastructures ferroviaires</span>.</span> PhD
+thesis, Universit&eacute; de Valenciennes et du Hainaut
+Cambr&eacute;sis, Valenciennes, France. (In french).<br>
+        <br>
+Delorme, Xavier, Rodriguez, Joaquin, and Gandibleux, Xavier. 2001. <span
+ style="color: rgb(153, 0, 0);">Heuristics for railway infrastructure
+saturation</span>. <span style="font-style: italic;">Electronic Notes
+in Theoretical
+Computer Science</span> series, volume 50 of issue 1, 15 pages.
+Elsevier.<br>
+        <br>
+Delorme, Xavier. 2003. <span style="font-style: italic;"><span
+ style="color: rgb(153, 0, 0);">Mod&eacute;lisation et
+r&eacute;solution de probl&egrave;mes li&eacute;s &agrave;
+l'exploitation d'infrastructures ferroviaires</span>. </span>PhD
+thesis, Universit&eacute; de Valenciennes et du Hainaut
+Cambr&eacute;sis, Valenciennes, France. (In french).<br>
+        <br>
+Delorme, Xavier, Gandibleux, Xavier, and Degoutin, Fabien. 2010. <span
+ style="color: rgb(153, 0, 0);">Evolutionary, constructive and hybrid
+procedures for the bi-objective
+set packing problem</span>. <span style="font-style: italic;">European
+Journal of Operational
+Research</span>, 204(2):206-217.<br>
+        <br>
+Delorme, Xavier, Gandibleux, Xavier, and Rodriguez, Joaquin. 2004. <span
+ style="color: rgb(153, 0, 0);">GRASP for set packing problems</span>. <span
+ style="font-style: italic;">European Journal of Operational
+Research</span>, 153 (3), 564-580.<br>
+        <br>
+Delorme, Xavier, Gandibleux, Xavier, and Rodriguez, Joaquin. 2009. <span
+ style="color: rgb(153, 0, 0);">Stability evaluation of a railway
+timetable at station level</span>. <span style="font-style: italic;">European
+Journal of Operational
+Research</span>, 195(3), 780-790.<br>
+        <br>
+Ehrgott, Matthias, and Gandibleux, Xavier. 2004. <span
+ style="color: rgb(153, 0, 0);">Approximative Solution Methods for
+Multiobjective Combinatorial
+Optimization</span>. <span style="font-style: italic;">TOP:
+International Journal on Operations Research of the Spanish Society of
+Statistics and Operations Research</span>, 12(1), 1-63. Springer.<br>
+        <br>
+Gandibleux, Xavier, Delorme, Xavier, and T'Kindt, Vincent. 2004. <span
+ style="color: rgb(153, 0, 0);">An Ant Colony Algorithm for the Set
+Packing Problem</span>. In <span style="font-style: italic;">Ant
+Colony Optimization and Swarm Intelligence</span>
+(Dorigo, M., Birattari, M., Blum, Ch.,&nbsp; Gambardella, L., Mondada,
+Fr., &amp; Stutzle, Th. eds). Lecture
+Notes in Computer Sciences, vol. 3172, pages&nbsp; 49-60. Springer.<br>
+        <br>
+Gandibleux, Xavier, Jorge, Julien, Delorme, Xavier, and Rodriguez,
+Joaquin. 2010. <span style="color: rgb(153, 0, 0);">Algorithme de
+fourmis pour mesurer et optimiser la capacit&eacute; d'un
+r&eacute;seau ferroviaire</span>. In <span style="font-style: italic;">Fourmis
+artificielles 1; des
+bases de l'optimisation aux applications industrielles</span> (N.
+Monmarch&eacute;, F. Guinand, et P. Siarry eds). Chapitre 9, pages
+211-240. Trait&eacute; IC2.
+Herm&egrave;s-Lavoisier. (In french).<br>
+        <br>
+Gandibleux, Xavier, Riteau, Pierre, and Delorme, Xavier. 2010. <span
+ style="color: rgb(153, 0, 0);">RECIFE: a MCDSS for railway capacity</span>.
+In<span style="font-style: italic;"> Multiple Criteria Decision Making
+for
+Sustainable Energy and Transportation Systems</span> (Ehrgott, M.,
+Naujoks,
+B., Stewart, Th., &amp;&nbsp; Wallenius, J. eds). Lecture Notes in
+Economics and
+Mathematical Systems, vol. 634. Pages 93-103. Springer.<br>
+        <br>
+M&eacute;rel, Aur&eacute;lien, Gandibleux, Xavier, Demassey, Sophie,
+and Lusby, Richard. 2009. <span style="color: rgb(153, 0, 0);">An
+improved Upper Bound for the Railway Infrastructure Capacity Problem
+on the Pierrefitte-Gonesse Junction</span>. In <span
+ style="font-style: italic;">Proceedings of the ROADEF 2009 -
+French National OR Conference</span>. Pages 62-76. ISBN
+:2-905267-64-X.<br>
+        <br>
+Rodriguez, Joaquin, Delorme, Xavier, and Gandibleux, Xavier. 2002. <span
+ style="color: rgb(153, 0, 0);">Railway infrastructure saturation using
+constraint programming
+approach</span>. In <span style="font-style: italic;">Computers in
+railways VIII</span>
+(J. Allan, R. Hill, C. Brebbia, G. Sciutto, and S. Sone, eds), pages
+807-816, Southampton. WIT press.<br>
+        <br>
+Rodriguez, Joaquin, Delorme, Xavier, Gandibleux, Xavier,
+Marli&egrave;re, Gr&eacute;gory, Bartusiak, Roman, Degoutin, Fabien,
+and Sobieraj, Sonia. 2007. <span style="color: rgb(153, 0, 0);">RECIFE:
+models and tools for analyzing rail capacity</span>. <span
+ style="font-style: italic;">Recherche Transports
+S&eacute;curit&eacute;</span>,&nbsp; 95, 19-36.</h6>
+      </blockquote>
+      <font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><a
+ name="Contacts"></a></b></font><font size="-1">[ </font><font
+ color="#000000" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"
+ size="-1"><a href="../index.html">Home</a> | <a
+ href="index.html#Top">Top</a> ][ <a href="index.html#Motivation">Motivation</a>
+| <a href="index.html#Principle">Principle</a> | <a
+ href="index.html#Software">Software</a>
+| <a href="index.html#References">References</a> | <a
+ href="index.html#Contacts">Contacts</a>
+| <a href="index.html#Acknowledgment">Acknowledgment</a> </font><font
+ color="#000000" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"
+ size="-1">]</font>
+      <p style="color: rgb(0, 0, 0);"><font
+ face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" size="+1"><b>Contacts</b></font></p>
+      <blockquote></blockquote>
+      <blockquote>
+        <h6><span style="color: rgb(153, 0, 0);">Xavier Gandibleux</span>
+(
+Xavier[dot]Gandibleux[at]univ-nantes[dot]fr ). <br>
+D&eacute;partement d'informatique,
+Universit&eacute; de Nantes<br>
+2 rue de la Houssini&egrave;re BP 92208, F44322 Nantes Cedex 03 -
+FRANCE.<br>
+        <br>
+        <span style="color: rgb(153, 0, 0);">Xavier Delorme</span>
+(Delorme[at]emse[dot]fr). <br>
+Centre G&eacute;nie Industriel et Informatique, Ecole Nationale
+Sup&eacute;rieure des Mines de Saint-Etienne<br>
+158 cours Fauriel, F42023 Saint-Etienne Cedex 2 - FRANCE.<br>
+        <br>
+        <span style="color: rgb(153, 0, 0);">Joaquin Rodriguez</span>
+(Joaquin[dot]Rodriguez[at]inrets[dot]fr). <br>
+INRETS-ESTAS, Universit&eacute; Lille-Nord de France&nbsp; <br>
+20 rue Elis&eacute;e Reclus, BP 317, F59666 Villeneuve d'Ascq Cedex -
+FRANCE.</h6>
+      </blockquote>
+      <font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><a
+ name="Acknowledgment"></a></b></font><font size="-1">[ </font><font
+ color="#000000" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"
+ size="-1"><a href="../index.html">Home</a> | <a
+ href="index.html#Top">Top</a> ][ <a href="index.html#Motivation">Motivation</a>
+| <a href="index.html#Principle">Principle</a> | <a
+ href="index.html#Software">Software</a>
+| <a href="index.html#References">References</a> | <a
+ href="index.html#Contacts">Contacts</a>
+| <a href="index.html#Acknowledgment">Acknowledgment</a> </font><font
+ color="#000000" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"
+ size="-1">]</font>
+      <p style="color: rgb(0, 0, 0);"><font
+ face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" size="+1"><b>Acknowledgment</b></font></p>
+      <blockquote>
+        <h6>RECIFE is partially issued from the research project "<span
+ style="color: rgb(153, 0, 0);">REcherches en
+Capacit&eacute; d'Infrastructures FErroviaires</span>" (i.e. railway
+infrastructure capacity studies) involving INRETS (the French national
+institute for
+transport and safety research), SNCF (the French national railway
+company), University of Valenciennes, Ecole des Mines de Saint-Etienne
+and University of Nantes. The research project has been partially
+supported by the regional council Nord-Pas de Calais and&nbsp;
+European Union research funds (FEDER).<br>
+        </h6>
+        <h6>Cr&eacute;dits photos: <span style="color: rgb(153, 0, 0);">RFF</span><br>
+        </h6>
+      </blockquote>
+      </div>
+      </td>
+    </tr>
+    <tr height="20">
+      <td height="20" width="40"><br>
+      </td>
+      <td height="20" width="740"><br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table border="0" cellpadding="0" cellspacing="2" width="780">
+  <tbody>
+    <tr height="15">
+      <td height="15" width="40"><br>
+      </td>
+      <td height="15" width="70"><font
+ face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" size="2">Jump to...</font></td>
+      <td height="15" width="290"><font
+ face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><font
+ color="#000000" size="2"><a
+ href="http://www.sciences.univ-nantes.fr/info/enseignement/">The
+Computer Science Department</a></font></font></td>
+      <td height="15" width="290"><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><font color="#000000"><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><font color="#000000"><font size="2" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><a href="http://www.irccyn.ec-nantes.fr">IRCCyN UMR CNRS 6597</a></font></font></font></font></font></td>
+    </tr>
+    <tr height="15">
+      <td height="15" width="40"><br>
+      </td>
+      <td height="15" width="70"><br>
+      </td>
+      <td height="15" width="290"><font
+ face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><font
+ color="#000000"><font
+ face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" size="2"><a
+ href="http://www.univ-nantes.fr/">The University of Nantes</a></font></font></font></td>
+      <td height="15" width="290"><a href="http://oro.univ-nantes.fr/"><font
+ face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><font
+ color="#000000"><font
+ face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" size="2"><a href="http://master-info.univ-nantes.fr/"><font size="2" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">MSc in Computer Science</font></a><font size="2" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">,<a href="http://oro.univ-nantes.fr/"> track &quot;Optimization in OR&quot;</a></font><a href="http://oro.univ-nantes.fr/"></a><a href="http://oro.univ-nantes.fr/"></a></font></font></font></a></td>
+    </tr>
+    <tr height="15">
+      <td height="15" width="40"><br>
+      </td>
+      <td height="11" width="70"><br>
+      </td>
+      <td height="11" width="290"><br>
+      </td>
+      <td height="11" width="290"><br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p> </p>
+</body>
+</html>

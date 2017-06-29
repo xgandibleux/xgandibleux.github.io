@@ -1,279 +1,9 @@
-<!DOCTYPE doctype PUBLIC "-//w3c//dtd html 4.0 transitional//en">
-<html>
-  <head>
-    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
-    <title>Xavier GANDIBLEUX Homepage</title>
-    <meta http-equiv="description" content="Activities of the Multi-Objective Optimization Group in Nantes">
-    <meta http-equiv="author" content="Xavier Gandibleux">
-    <meta name="keywords" content="MOCO Multiobjective Optimization Operations Reseach">
-    <link href="../XGstyle.css" type="text/css" rel="stylesheet">
-    <script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-17716935-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-  </script>
-  </head>
-  <body style="background-color: rgb(255, 255, 255);"> <a name="Top"></a><img title="banniere julia"
-      src="BanJulia.jpg"
-      style="border: 0px solid ; width: 768px; height: 166px;">
-    <table border="0" cellpadding="0" cellspacing="2" width="780">
-      <tbody>
-        <tr height="10">
-          <td height="10" width="40"><br>
-          </td>
-          <td height="10" width="680"><br>
-          </td>
-        </tr>
-        <tr height="20">
-          <td height="20" width="40"><br>
-          </td>
-          <td height="20" width="680">
-            <div align="left">
-              <h1><font color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">jTeachOPT</font></h1>
-              <h2><font color="#919191" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"
-                  size="3"><span
-                    style="font-weight: normal;">Implementation
-                    in Julia of well-known optimization algorithms for
-                    pedagogical purposes</span> </font></h2>
-            </div>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-    <table border="0" cellpadding="0" cellspacing="2" width="780">
-      <tbody>
-        <tr height="20">
-          <td height="20" width="40"><br>
-          </td>
-          <td height="20" width="740"> <br>
-          </td>
-        </tr>
-        <tr>
-          <td width="40"> <br>
-          </td>
-          <td width="740">
-            <div align="left">
-              <p><br>
-                <font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><a
-                      name="Motivation"></a></b></font><font
-                  size="-1">[
-                </font><font color="#000000" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"
-                  size="-1"><a
-                    href="../index.html">Home</a>
-                  | <a href="index.html#Top">Top</a> ][ <a href="index.html#Motivation">Présentation</a>
-                  | <a href="index.html#Principle">Ressources</a> | <a href="index.html#Contacts">Contact</a>
-                </font><font color="#000000" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"
-                  size="-1">]</font></p>
-              <p style="color: rgb(0, 0, 0);"><b><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"
-                    size="+1">Présentation</font></b>
-              </p>
-              <blockquote>
-                <h6><strong>Julia?</strong> </h6>
-                <h6>C'est un langage de programmation de haut niveau, gratuit et
-                  open source, pour le calcul scientifique. Il présente une
-                  syntaxe proche de python et intègre les mécanismes pour
-                  appeler des codes externes existants, notamment implémentés en
-                  langage C. </h6>
-                <h6>Extrèmement facile à être pris en main par un public
-                  informaticien (habitué à C, C++, Pascal, Ada, Java, lisp,
-                  etc.) comme par un public mathématicien (habitué à Fortran,
-                  Python, Mathlab, Octave, R, Sage, etc.), Julia m'est apparu
-                  notamment intéressant en support aux enseignements en
-                  optimisation.</h6>
-                <h6>Julia permet de réaliser rapidement des prototypes logiciel,
-                  en amenant le concepteur de l'application à se concentrer sur
-                  l'essentiel : les éléments algorithmiques du traitement à
-                  réaliser. En outre et malgré qu'il s'agit un langage récent,
-                  il dispose déjà de nombreuses librairies (numériques,
-                  graphiques, calculs intensifs, etc).</h6>
-                <h6><strong>jTeachOPT?</strong> </h6>
-                <h6>C'est un package (qui en est à ses débuts) implémentant en
-                  Julia des algorithmes classiques en recherche opérationnelle
-                  (problèmes d'optimisation combinatoire; algorithme
-                  d'énumération implicite; heuristiques et métaheuristiques),
-                  destiné à un usage pédagogique. </h6>
-                <h6>Il s'offre aux étudiants comme base de travail pour
-                  accueillir d’autres composants/algorithmes exacts ou approché,
-                  permet de travailler le calibrage de certains algorithmes de
-                  type métaheuristiques et est destiné à s'étoffer en intégrant
-                  d’autres problèmes d'optimisation combinatoires. </h6>
-                <h6>Mon « hello word » dans ce domaine étant le sac-à-dos
-                  unidimensionnel en variables 01 (01UKP), c’est autour de ce
-                  dernier que se construit ce package pour l'heure. Le package
-                  est disponible sur GitHub, <a href="https://github.com/xgandibleux/jTeachOPT">https://github.com/xgandibleux/jTeachOPT</a>
-                  . Toute personne intéressée par l'objectif de ce développement
-                  est bienvenue pour y contribuer. </h6>
-                <h6>Dans la version actuelle (0.1.2), le package présente des
-                  traitements de base sur le 01UKP (génération d'instance;
-                  méthode de descente; relaxation linéaire), un recuit simulé
-                  (avec deux voisinages pour le 01UKP), des sorties graphiques
-                  (tracé du comportement du recuit simulé; tracé du schéma de
-                  refroidissement).</h6>
-                <h6>Ce matériel sera utilisé à l'Université de Nantes dans le
-                  cours "Metaheuristics" en M1 informatique parcours
-                  "optimisation en recherche opérationnelle" à partir de la
-                  rentrée 2016-2017.</h6>
-                <h6><strong>Utilisation?</strong></h6>
-                <h6>Un code Julia s'exécute soit en local (voir les
-                  distributions sur <a href="http://julialang.org/">http://julialang.org/</a>),
+<!DOCTYPE doctype PUBLIC "-//w3c//dtd html 4.0 transitional//en"><html>  <head>    <meta content="text/html; charset=UTF-8" http-equiv="content-type">    <title>Xavier GANDIBLEUX Homepage</title>    <meta http-equiv="description" content="Activities of the Multi-Objective Optimization Group in Nantes">    <meta http-equiv="author" content="Xavier Gandibleux">    <meta name="keywords" content="MOCO Multiobjective Optimization Operations Reseach">    <link href="../XGstyle.css" type="text/css" rel="stylesheet">    <script type="text/javascript">  var _gaq = _gaq || [];  _gaq.push(['_setAccount', 'UA-17716935-1']);  _gaq.push(['_trackPageview']);  (function() {    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);  })();  </script>  </head>  <body style=" background-color: rgb(255, 255, 255);"> <a name="Top"></a><img      title="banniere julia"      src="BanJulia.jpg"      style="border: 0px solid ; width: 768px; height: 166px;">    <table border="0" cellpadding="0" cellspacing="2" width="780">      <tbody>        <tr height="10">          <td height="10" width="40"><br>          </td>          <td height="10" width="680"><br>          </td>        </tr>        <tr height="20">          <td height="20" width="40"><br>          </td>          <td height="20" width="680">            <div align="left">              <h1><font color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">jTeachOPT</font></h1>              <h2><font color="#919191" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"                  size="3"><span                    style="font-weight: normal;">Implementation
+                    in Julia of well-known optimization algorithms for                    pedagogical purposes</span> </font></h2>            </div>          </td>        </tr>      </tbody>    </table>    <table border="0" cellpadding="0" cellspacing="2" width="780">      <tbody>        <tr height="20">          <td height="20" width="40"><br>          </td>          <td height="20" width="740"> <br>          </td>        </tr>        <tr>          <td width="40"> <br>          </td>          <td width="740">            <div align="left">              <p><br>                <font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><a                      name="Motivation"></a></b></font><font                  size="-1">[                </font><font color="#000000" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"                  size="-1"><a                    href="../index.html">Home</a>                  | <a href="index.html#Top">Top</a> ][ <a href="index.html#Motivation">Présentation</a>                  | <a href="index.html#Principle">Ressources</a> | <a href="index.html#Contacts">Contact</a>                </font><font color="#000000" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"                  size="-1">]</font></p>              <p style="color: rgb(0, 0, 0);"><b><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"                    size="+1">Présentation</font></b>              </p>              <blockquote>                <h6><strong>Julia?</strong> </h6>                <h6>C'est un langage de programmation de haut niveau, gratuit et                  open source, pour le calcul scientifique. Il présente une                  syntaxe proche de python et intègre les mécanismes pour                  appeler des codes externes existants, notamment implémentés en                  langage C. </h6>                <h6>Extrèmement facile à être pris en main par un public                  informaticien (habitué à C, C++, Pascal, Ada, Java, lisp,                  etc.) comme par un public mathématicien (habitué à Fortran,                  Python, Mathlab, Octave, R, Sage, etc.), Julia m'est apparu                  notamment intéressant en support aux enseignements en                  optimisation.</h6>                <h6>Julia permet de réaliser rapidement des prototypes logiciel,                  en amenant le concepteur de l'application à se concentrer sur                  l'essentiel : les éléments algorithmiques du traitement à                  réaliser. En outre et malgré qu'il s'agit un langage récent,                  il dispose déjà de nombreuses librairies (numériques,                  graphiques, calculs intensifs, etc).</h6>                <h6><strong>jTeachOPT?</strong> </h6>                <h6>C'est un package (qui en est à ses débuts) implémentant en                  Julia des algorithmes classiques en recherche opérationnelle                  (problèmes d'optimisation combinatoire; algorithme                  d'énumération implicite; heuristiques et métaheuristiques),                  destiné à un usage pédagogique. </h6>                <h6>Il s'offre aux étudiants comme base de travail pour                  accueillir d’autres composants/algorithmes exacts ou approché,                  permet de travailler le calibrage de certains algorithmes de                  type métaheuristiques et est destiné à s'étoffer en intégrant                  d’autres problèmes d'optimisation combinatoires. </h6>                <h6>Mon « hello word » dans ce domaine étant le sac-à-dos                  unidimensionnel en variables 01 (01UKP), c’est autour de ce                  dernier que se construit ce package pour l'heure. Le package                  est disponible sur GitHub, <a href="https://github.com/xgandibleux/jTeachOPT">https://github.com/xgandibleux/jTeachOPT</a>                  . Toute personne intéressée par l'objectif de ce développement                  est bienvenue pour y contribuer. </h6>                <h6>Dans la version actuelle (0.1.2), le package présente des                  traitements de base sur le 01UKP (génération d'instance;                  méthode de descente; relaxation linéaire), un recuit simulé                  (avec deux voisinages pour le 01UKP), des sorties graphiques                  (tracé du comportement du recuit simulé; tracé du schéma de                  refroidissement).</h6>                <h6>Ce matériel sera utilisé à l'Université de Nantes dans le                  cours "Metaheuristics" en M1 informatique parcours                  "optimisation en recherche opérationnelle" à partir de la                  rentrée 2016-2017.</h6>                <h6><strong>Utilisation?</strong></h6>                <h6>Un code Julia s'exécute soit en local (voir les                  distributions sur <a href="http://julialang.org/">http://julialang.org/</a>),
                   soit en ligne (voir <a href="https://www.juliabox.org/">https://www.juliabox.org/</a>).
-                  jTeachOPT utilise le package <em>PyPlot</em>. Il sera
-                  nécessaire d'ajouter à votre configuration locale ce package,
-                  en invoquant sous l'interpréteur Julia la commande <em>Pkg.add("PyPlot")</em>.</h6>
-                <h6>Pour exécuter jTeachOPT en local, il suffit de se placer
-                  dans le répertoire de votre ordinateur où est localisé le
-                  fichier <em>jTeachOPTmain.jl</em> et d'invoquer sous
-                  l'interpréteur Julia la commande <em>include("jTeachOPTmain.jl")</em>.
-                  Après un court instant, le résultat de l'exécution de
-                  l'algorithme apparait dans l'interpréteur Julia et un tracé
-                  graphique résume l'ensemble des calculs dans une fenêtre
-                  séparée. Enjoy!</h6>
-              </blockquote>
-              <span style="font-weight: bold;"></span><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><a
-                    name="Principle"></a></b></font><font
-                size="-1">[
-              </font><font color="#000000" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"
-                size="-1"><a
-                  href="../index.html">Home</a>
-                | <a href="index.html#Top">Top</a> ][ <a href="index.html#Motivation">Présentation</a>
-                | <a href="index.html#Principle">Ressources</a> | <a href="index.html#Contacts">Contact</a></font><font
-                color="#000000"
-                face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"
-                size="-1">
-                ]</font>
-              <p style="color: rgb(0, 0, 0);"><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"
-                  size="+1"><b>Ressources
-                    Julia</b></font></p>
-              <blockquote>
-                <h6><strong>1) Le site de référence du langage </strong></h6>
-              </blockquote>
-              <h6 style="margin-left: 60px;"><a href="http://julialang.org/">julialang</a>
-              </h6>
-              <blockquote>
-                <h6><strong>2) Programmer en Julia</strong></h6>
-              </blockquote>
-              <h6 style="margin-left: 60px;"><a href="https://en.wikibooks.org/wiki/Introducing_Julia">wikibook</a><br>
-                <a href="http://quant-econ.net/jl/index.html">Introduction
-                  rapide avec illustrations</a></h6>
-              <blockquote>
-                <h6><strong>3) Le volet « optimisation » sous Julia </strong></h6>
-              </blockquote>
-              <h6 style="margin-left: 60px;"><a href="http://www.juliaopt.org/notebooks/Shuvomoy%20-%20Getting%20started%20with%20JuMP.html">JuliaOPT</a><br>
-                <a href="https://www.gnu.org/software/glpk/">Le site de
-                  référence GLPK</a> </h6>
-              <blockquote>
-                <h6><strong>4) Le volet « graphique » sous Julia </strong></h6>
-              </blockquote>
-              <h6 style="margin-left: 60px;"><a href="https://gist.github.com/gizmaa/7214002">Exemples
-                  de tracages</a><br>
-                <a href="http://www.python-simple.com/python-matplotlib/matplotlib-intro.php">Introduction
-                  à matplotlib pour tracer via PyPlot en Julia</a><br>
-                <a href="http://matplotlib.org/index.html">Le site de référence
-                  matplotlib</a> </h6>
-              <blockquote>
-                <h6><strong> 5) Quelques enseignements en optimisation où Julia
-                    est utilisé </strong></h6>
-              </blockquote>
-              <h6 style="margin-left: 60px;"><a href="http://perso.ensta-paristech.fr/%7Ediam/julia/">ENSTA
-                  ParisTech</a> <br>
-                <a href="http://www.montefiore.ulg.ac.be/%7Etcuvelier/?page=teaching.15-do">Université
-                  de Liège</a><br>
-                <a href="http://stanford.edu/class/ee103/slides/">Stanford</a> </h6>
-              <h6 style="margin-left: 40px;">&nbsp;</h6>
-              <font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><a name="Contacts"></a></b></font><font
-                size="-1">[
-              </font><font color="#000000" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"
-                size="-1"><a
-                  href="../index.html">Home</a>
-                | <a href="index.html#Top">Top</a> ][ <a href="index.html#Motivation">Présentation</a>
-                | <a href="index.html#Principle">Ressources</a> | <a href="index.html#Contacts">Contact</a></font><font
-                color="#000000"
-                face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"
-                size="-1">]</font>
-              <p style="color: rgb(0, 0, 0);"><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"
-                  size="+1"><b>Contact</b></font></p>
-              <blockquote></blockquote>
-              <blockquote>
-                <h6><span style="color: rgb(153, 0, 0);">Xavier Gandibleux</span>
-                  ( Xavier[dot]Gandibleux[at]univ-nantes[dot]fr ). <br>
-                  Département d'informatique, Université de Nantes<br>
-                  2 rue de la Houssinière BP 92208, F44322 Nantes Cedex 03 -
-                  FRANCE. </h6>
-              </blockquote>
-              <blockquote> </blockquote>
-            </div>
-          </td>
-        </tr>
-        <tr height="20">
-          <td height="20" width="40"><br>
-          </td>
-          <td height="20" width="740"><br>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-    <table border="0" cellpadding="0" cellspacing="2" width="780">
-      <tbody>
-        <tr height="15">
-          <td height="15" width="40"><br>
-          </td>
-          <td height="15" width="70"><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"
-              size="2">Jump
-              to...</font></td>
-          <td height="15" width="290"><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><font
-                color="#000000"
-                size="2"><a
-                  href="http://www.sciences.univ-nantes.fr/info/enseignement/">The
-Computer
-                  Science Department</a></font></font></td>
-          <td height="15" width="290"><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><font
-                color="#000000"><font
-                  face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><font
-                    color="#000000"><font
-                      face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"
-                      size="2"><a
-                        href="http://www.irccyn.ec-nantes.fr">IRCCyN
-                        UMR CNRS 6597</a></font></font></font></font></font></td>
-        </tr>
-        <tr height="15">
-          <td height="15" width="40"><br>
-          </td>
-          <td height="15" width="70"><br>
-          </td>
-          <td height="15" width="290"><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><font
-                color="#000000"><font
-                  face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"
-                  size="2"><a
-                    href="http://www.univ-nantes.fr/">The
-                    University of Nantes</a></font></font></font></td>
-          <td height="15" width="290"><a href="http://oro.univ-nantes.fr/"><font
-                face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"
-                size="2">MSc
-                in Computer Science</font></a><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"
-              size="2">,<a
-                href="http://oro.univ-nantes.fr/">
-                track "Optimization in OR"</a></font><a href="http://oro.univ-nantes.fr/"></a><a
-              href="http://oro.univ-nantes.fr/"></a></td>
-        </tr>
-        <tr height="15">
-          <td height="15" width="40"><br>
-          </td>
-          <td height="11" width="70"><br>
-          </td>
-          <td height="11" width="290"><br>
-          </td>
-          <td height="11" width="290"><br>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </body>
-</html>
+                  jTeachOPT utilise le package <em>PyPlot</em>. Il sera                  nécessaire d'ajouter à votre configuration locale ce package,                  en invoquant sous l'interpréteur Julia la commande <em>Pkg.add("PyPlot")</em>.</h6>                <h6>Pour exécuter jTeachOPT en local, il suffit de se placer                  dans le répertoire de votre ordinateur où est localisé le                  fichier <em>jTeachOPTmain.jl</em> et d'invoquer sous                  l'interpréteur Julia la commande <em>include("jTeachOPTmain.jl")</em>.                  Après un court instant, le résultat de l'exécution de                  l'algorithme apparait dans l'interpréteur Julia et un tracé                  graphique résume l'ensemble des calculs dans une fenêtre                  séparée. Enjoy!</h6>              </blockquote>              <span style="font-weight: bold;"></span><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><a                    name="Principle"></a></b></font><font                size="-1">[              </font><font color="#000000" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"                size="-1"><a                  href="../index.html">Home</a>                | <a href="index.html#Top">Top</a> ][ <a href="index.html#Motivation">Présentation</a>                | <a href="index.html#Principle">Ressources</a> | <a href="index.html#Contacts">Contact</a></font><font                color="#000000"                face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"                size="-1">                ]</font>              <p style="color: rgb(0, 0, 0);"><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"                  size="+1"><b>Ressources
+                    Julia</b></font></p>              <blockquote>                <h6><strong>1) Le site de référence du langage </strong></h6>              </blockquote>              <h6 style="margin-left: 60px;"><a href="http://julialang.org/">julialang</a>              </h6>              <blockquote>                <h6><strong>2) Programmer en Julia</strong></h6>              </blockquote>              <h6 style="margin-left: 60px;"><a href="https://en.wikibooks.org/wiki/Introducing_Julia">wikibook</a><br>                <a href="http://quant-econ.net/jl/index.html">Introduction                  rapide avec illustrations</a></h6>              <blockquote>                <h6><strong>3) Le volet « optimisation » sous Julia </strong></h6>              </blockquote>              <h6 style="margin-left: 60px;"><a href="http://www.juliaopt.org/notebooks/Shuvomoy%20-%20Getting%20started%20with%20JuMP.html">JuliaOPT</a><br>                <a href="https://www.gnu.org/software/glpk/">Le site de                  référence GLPK</a> </h6>              <blockquote>                <h6><strong>4) Le volet « graphique » sous Julia </strong></h6>              </blockquote>              <h6 style="margin-left: 60px;"><a href="https://gist.github.com/gizmaa/7214002">Exemples
+                  de tracages</a><br>                <a href="http://www.python-simple.com/python-matplotlib/matplotlib-intro.php">Introduction
+                  à matplotlib pour tracer via PyPlot en Julia</a><br>                <a href="http://matplotlib.org/index.html">Le site de référence                  matplotlib</a> </h6>              <blockquote>                <h6><strong> 5) Quelques enseignements en optimisation où Julia                    est utilisé </strong></h6>              </blockquote>              <h6 style="margin-left: 60px;"><a href="http://perso.ensta-paristech.fr/%7Ediam/julia/">ENSTA
+                  ParisTech</a> <br>                <a href="http://www.montefiore.ulg.ac.be/%7Etcuvelier/?page=teaching.15-do">Université
+                  de Liège</a><br>                <a href="http://stanford.edu/class/ee103/slides/">Stanford</a> </h6>              <h6 style="margin-left: 40px;">&nbsp;</h6>              <font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><a name="Contacts"></a></b></font><font                size="-1">[              </font><font color="#000000" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"                size="-1"><a                  href="../index.html">Home</a>                | <a href="index.html#Top">Top</a> ][ <a href="index.html#Motivation">Présentation</a>                | <a href="index.html#Principle">Ressources</a> | <a href="index.html#Contacts">Contact</a></font><font                color="#000000"                face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"                size="-1">]</font>              <p style="color: rgb(0, 0, 0);"><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"                  size="+1"><b>Contact</b></font></p>              <blockquote></blockquote>              <blockquote>                <h6><span style="color: rgb(153, 0, 0);">Xavier Gandibleux</span>                  ( Xavier[dot]Gandibleux[at]univ-nantes[dot]fr ). <br>                  Département d'informatique, Université de Nantes<br>                  2 rue de la Houssinière BP 92208, F44322 Nantes Cedex 03 -                  FRANCE. </h6>              </blockquote>              <blockquote> </blockquote>            </div>          </td>        </tr>        <tr height="20">          <td height="20" width="40"><br>          </td>          <td height="20" width="740"><br>          </td>        </tr>      </tbody>    </table>  </body></html>
